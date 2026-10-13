@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reddit Wireframe - Post + Comments</title>
+<link rel="stylesheet" href="post.css">
+</head>
+<body>
+<header class="hdr">
+  <a class="logo" href="../lab01-home/home.html">LOGO</a>
+  <div class="search">🔍 Search Reddit</div>
+  <span class="sp"></span>
+  <a class="ico" href="../lab06-create-post/create-post.html" title="Create">+</a>
+  <a class="ico" href="../lab09-messages/messages.html" title="Chat">✉</a>
+  <a class="ico" href="../lab10-notifications/notifications.html" title="Notifications">🔔</a>
+  <a class="ico" href="../lab11-settings/settings.html" title="Settings">⚙</a>
+  <a class="ico" href="../lab07-profile/profile.html" title="Profile">👤</a>
+  <a class="btn" href="../lab12-login/login.html">Log In</a>
+  <a class="btn dark" href="../lab13-signup/signup.html">Sign Up</a>
+</header>
+<div class="layout ">
+<nav class="side">
+  <a class="" href="../lab01-home/home.html">Home</a><a class="" href="../lab02-popular/popular.html">Popular</a><a class="" href="../lab03-communities/communities.html">Explore Communities</a>
+  <hr><small>COMMUNITIES</small>
+  <a href="../lab04-subreddit/subreddit.html">r/community</a><a href="../lab04-subreddit/subreddit.html">r/community2</a><a href="../lab04-subreddit/subreddit.html">r/community3</a>
+  <hr><a href="../index.html">⌂ Wireframe Index</a>
+</nav>
+<main>
+<a class="btn" href="../lab01-home/home.html">← Back</a><br><br>
+<div class="card post"><div class="vote"><button class="up">▲</button><b>1.2k</b><button class="down">▼</button></div><div class="body">
+<small><a href="../lab04-subreddit/subreddit.html">r/community</a> • u/<a href="../lab07-profile/profile.html">username</a> • 3h</small><h2>Post title goes here</h2>
+<div class="ln"></div><div class="ln"></div><div class="ln w80"></div><div class="img" style="height:260px"></div>
+<div class="actions"><span>💬 128 Comments</span><span>↗ Share</span><span class="save">★ Save</span></div></div></div>
+<div class="card"><small>Comment as u/username</small><div class="input tall">What are your thoughts?</div><button class="btn dark" id="cbtn">Comment</button></div>
+<div class="card"><b>Sort by:</b> <span class="btn">Best ▼</span><div id="comments"><div class="cmt"><div class="row"><div class="img circle xs"></div><small>u/username • 2h</small></div><div class="ln"></div><div class="ln w80"></div><small>▲ 24 ▼ &nbsp; 💬 Reply &nbsp; ↗ Share</small><div class="cmt"><div class="row"><div class="img circle xs"></div><small>u/username • 1h</small></div><div class="ln"></div><div class="ln w50"></div><small>▲ 5 ▼ &nbsp; 💬 Reply</small></div></div><div class="cmt"><div class="row"><div class="img circle xs"></div><small>u/username • 2h</small></div><div class="ln"></div><div class="ln w80"></div><small>▲ 24 ▼ &nbsp; 💬 Reply &nbsp; ↗ Share</small><div class="cmt"><div class="row"><div class="img circle xs"></div><small>u/username • 1h</small></div><div class="ln"></div><div class="ln w50"></div><small>▲ 5 ▼ &nbsp; 💬 Reply</small></div></div><div class="cmt"><div class="row"><div class="img circle xs"></div><small>u/username • 2h</small></div><div class="ln"></div><div class="ln w80"></div><small>▲ 24 ▼ &nbsp; 💬 Reply &nbsp; ↗ Share</small></div></div></div>
+</main>
+<aside class="right"><div class="card"><b>About Community</b><div class="ln"></div><div class="ln"></div><div class="ln w50"></div>
+<div class="row"><div class="grow"><b>1.2M</b><br><small>Members</small></div><div class="grow"><b>3.4k</b><br><small>Online</small></div></div><br>
+<a class="btn dark" href="../lab06-create-post/create-post.html">+ Create Post</a></div></aside>
+</div>
+<script src="post.js"></script>
+</body>
+</html>
