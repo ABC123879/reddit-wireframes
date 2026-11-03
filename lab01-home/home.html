@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reddit Wireframe - Home Feed</title>
-<link rel="stylesheet" href="./home.css">
-<script src="./home.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Morgan | Personal Profile</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-<header class="hdr">
-  <a class="logo" href="../lab01-home/home.html">LOGO</a>
-  <div class="search">🔍 Search Reddit</div>
-  <span class="sp"></span>
-  <a class="ico" href="../lab06-create-post/create-post.html" title="Create">+</a>
-  <a class="ico" href="../lab09-messages/messages.html" title="Chat">✉</a>
-  <a class="ico" href="../lab10-notifications/notifications.html" title="Notifications">🔔</a>
-  <a class="ico" href="../lab11-settings/settings.html" title="Settings">⚙</a>
-  <a class="ico" href="../lab07-profile/profile.html" title="Profile">👤</a>
-  <a class="btn" href="../lab12-login/login.html">Log In</a>
-  <a class="btn dark" href="../lab13-signup/signup.html">Sign Up</a>
-</header>
-<div class="layout ">
-<nav class="side">
-  <a class="active" href="../lab01-home/home.html">Home</a><a class="" href="../lab02-popular/popular.html">Popular</a><a class="" href="../lab03-communities/communities.html">Explore Communities</a>
-  <hr><small>COMMUNITIES</small>
-  <a href="../lab04-subreddit/subreddit.html">r/community</a><a href="../lab04-subreddit/subreddit.html">r/community2</a><a href="../lab04-subreddit/subreddit.html">r/community3</a>
-  <hr><a href="../index.html">⌂ Wireframe Index</a>
-</nav>
-<main>
-<a class="card row" href="../lab06-create-post/create-post.html"><div class="img circle sm"></div><div class="input grow" style="margin:0">Create Post</div></a><div class="tabs"><a class="active">Best</a><a class="">Hot</a><a class="">New</a><a class="">Top</a></div><div class="card post"><div class="vote"><button class="up">▲</button><b>1.2k</b><button class="down">▼</button></div><div class="body">
-<small><a href="../lab04-subreddit/subreddit.html">r/community</a> • u/<a href="../lab07-profile/profile.html">username</a> • 3h</small>
-<h3><a href="../lab05-post/post.html">Post title goes here</a></h3><div class="ln"></div><div class="ln w80"></div>
-<a href="../lab05-post/post.html"><div class="img"></div></a>
-<div class="actions"><a href="../lab05-post/post.html">💬 Comments</a><span>↗ Share</span><span class="save">★ Save</span></div></div></div><div class="card post"><div class="vote"><button class="up">▲</button><b>1.2k</b><button class="down">▼</button></div><div class="body">
-<small><a href="../lab04-subreddit/subreddit.html">r/community</a> • u/<a href="../lab07-profile/profile.html">username</a> • 3h</small>
-<h3><a href="../lab05-post/post.html">Post title goes here</a></h3><div class="ln"></div><div class="ln w80"></div>
-<a href="../lab05-post/post.html"><div class="img"></div></a>
-<div class="actions"><a href="../lab05-post/post.html">💬 Comments</a><span>↗ Share</span><span class="save">★ Save</span></div></div></div><div class="card post"><div class="vote"><button class="up">▲</button><b>1.2k</b><button class="down">▼</button></div><div class="body">
-<small><a href="../lab04-subreddit/subreddit.html">r/community</a> • u/<a href="../lab07-profile/profile.html">username</a> • 3h</small>
-<h3><a href="../lab05-post/post.html">Post title goes here</a></h3><div class="ln"></div><div class="ln w80"></div>
-<a href="../lab05-post/post.html"><div class="img"></div></a>
-<div class="actions"><a href="../lab05-post/post.html">💬 Comments</a><span>↗ Share</span><span class="save">★ Save</span></div></div></div><div class="card post"><div class="vote"><button class="up">▲</button><b>1.2k</b><button class="down">▼</button></div><div class="body">
-<small><a href="../lab04-subreddit/subreddit.html">r/community</a> • u/<a href="../lab07-profile/profile.html">username</a> • 3h</small>
-<h3><a href="../lab05-post/post.html">Post title goes here</a></h3><div class="ln"></div><div class="ln w80"></div>
-<a href="../lab05-post/post.html"><div class="img"></div></a>
-<div class="actions"><a href="../lab05-post/post.html">💬 Comments</a><span>↗ Share</span><span class="save">★ Save</span></div></div></div>
-</main>
-<aside class="right"><div class="card"><b>Trending Communities</b><div class="card row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community</b></a><div class="ln w50"></div></div><button class="btn join">Join</button></div><div class="card row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community</b></a><div class="ln w50"></div></div><button class="btn join">Join</button></div><div class="card row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community</b></a><div class="ln w50"></div></div><button class="btn join">Join</button></div><div class="card row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community</b></a><div class="ln w50"></div></div><button class="btn join">Join</button></div></div><div class="card"><small>About • Help • Terms • Privacy</small></div></aside>
-</div>
+  <div class="site-header">
+    <div class="brand"><h1>Alex Morgan</h1><p>Personal profile</p></div>
+    <div class="navigation">
+      <a href="#profile">Profile</a>
+      <a href="#posts">Posts</a>
+      <a href="#interests">Interests</a>
+      <a href="../lab03-communities/communities.html">Connect with me</a>
+    </div>
+  </div>
+
+  <div class="page-layout">
+    <div class="profile-section" id="profile">
+      <img class="profile-picture" src="profile-avatar.svg" alt="Profile illustration for Alex Morgan">
+      <div>
+        <h2>Alex Morgan</h2>
+        <p>Student • Front-end development enthusiast</p>
+        <p>I enjoy learning how thoughtful design and simple code can make the web more useful for everyone.</p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div id="posts">
+        <h2>Recent posts</h2>
+        <div class="post">
+          <h3>My first responsive page</h3>
+          <p>I built a small page with a flexible layout and learned how spacing can make content easier to read.</p>
+          <p>Posted October 20, 2026</p>
+        </div>
+        <div class="post">
+          <h3>Learning HTML one element at a time</h3>
+          <p>This week I practised headings, links, lists and images while building a personal profile.</p>
+          <p>Posted October 14, 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div id="interests">
+        <h2>Interests</h2>
+        <ul>
+          <li>Web development</li>
+          <li>Photography</li>
+          <li>Reading</li>
+          <li>Hiking</li>
+        </ul>
+      </div>
+      <div>
+        <h2>About me</h2>
+        <p>Currently exploring HTML, CSS and accessible design. Always happy to learn and collaborate.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer">
+    <p>© 2026 Alex Morgan</p>
+    <p>Experiments: <a href="../lab02-popular/popular.html">Lab 2: Semantic HTML</a> ·
+      <a href="../lab03-communities/communities.html">Lab 3: Connect form</a></p>
+  </div>
 </body>
 </html>

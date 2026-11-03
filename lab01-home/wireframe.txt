@@ -1,0 +1,15 @@
+ROUGH WIREFRAME — PERSONAL PROFILE
+
++------------------------------------------------------+
+| HEADER: Name / short tagline                         |
++------------------------------------------------------+
+| NAVIGATION: Profile | Posts | Interests | Connect    |
++------------------------------------------------------+
+| PROFILE: picture | name, role and short biography     |
++-----------------------------------+------------------+
+| MAIN CONTENT: recent posts        | SIDEBAR: about   |
+| - Post title and description     | interests        |
+| - Post title and description     |                  |
++-----------------------------------+------------------+
+| FOOTER: copyright / links                            |
++------------------------------------------------------+
