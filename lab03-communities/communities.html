@@ -1,36 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reddit Wireframe - Explore Communities</title>
-<link rel="stylesheet" href="communities.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect with Alex Morgan</title>
+  <link rel="stylesheet" href="communities.css">
+  <script src="communities.js" defer></script>
 </head>
 <body>
-<header class="hdr">
-  <a class="logo" href="../lab01-home/home.html">LOGO</a>
-  <div class="search">🔍 Search Reddit</div>
-  <span class="sp"></span>
-  <a class="ico" href="../lab06-create-post/create-post.html" title="Create">+</a>
-  <a class="ico" href="../lab09-messages/messages.html" title="Chat">✉</a>
-  <a class="ico" href="../lab10-notifications/notifications.html" title="Notifications">🔔</a>
-  <a class="ico" href="../lab11-settings/settings.html" title="Settings">⚙</a>
-  <a class="ico" href="../lab07-profile/profile.html" title="Profile">👤</a>
-  <a class="btn" href="../lab12-login/login.html">Log In</a>
-  <a class="btn dark" href="../lab13-signup/signup.html">Sign Up</a>
-</header>
-<div class="layout ">
-<nav class="side">
-  <a class="" href="../lab01-home/home.html">Home</a><a class="" href="../lab02-popular/popular.html">Popular</a><a class="active" href="../lab03-communities/communities.html">Explore Communities</a>
-  <hr><small>COMMUNITIES</small>
-  <a href="../lab04-subreddit/subreddit.html">r/community</a><a href="../lab04-subreddit/subreddit.html">r/community2</a><a href="../lab04-subreddit/subreddit.html">r/community3</a>
-  <hr><a href="../index.html">⌂ Wireframe Index</a>
-</nav>
-<main>
-<div class="card"><h2>Explore Communities</h2><div class="ln w50"></div></div><div class="tabs"><a class="active">All</a><a class="">Gaming</a><a class="">Sports</a><a class="">Tech</a><a class="">Music</a><a class="">Movies</a><a class="">Science</a></div><div class="grid"><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community1</b></a><br><small>100k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community2</b></a><br><small>200k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community3</b></a><br><small>300k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community4</b></a><br><small>400k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community5</b></a><br><small>500k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community6</b></a><br><small>600k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community7</b></a><br><small>700k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community8</b></a><br><small>800k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div><div class="card"><div class="row"><div class="img circle sm"></div><div class="grow"><a href="../lab04-subreddit/subreddit.html"><b>r/community9</b></a><br><small>900k members</small></div></div><div class="ln"></div><div class="ln w80"></div><button class="btn join">Join</button></div></div>
-</main>
+  <header class="site-header">
+    <div>
+      <h1>Get to Know Me / Connect With Me</h1>
+      <p>Alex Morgan's personal profile</p>
+    </div>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="../lab01-home/home.html">Lab 1: Profile</a>
+      <a href="../lab02-popular/popular.html">Lab 2: Semantic profile</a>
+    </nav>
+  </header>
 
-</div>
-<script src="communities.js"></script>
+  <main class="page-content">
+    <section aria-labelledby="form-intro">
+      <h2 id="form-intro">Let's connect</h2>
+      <p>Share a little about yourself and what you'd like to talk about. This demo form does not send or store your information.</p>
+    </section>
+
+    <form id="connect-form" action="#" method="post">
+      <fieldset>
+        <legend>1. Personal Details</legend>
+        <div class="form-grid">
+          <label for="full-name">Full name
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required>
+          </label>
+          <label for="date-of-birth">Date of birth
+            <input id="date-of-birth" name="dateOfBirth" type="date">
+          </label>
+          <fieldset class="choice-group">
+            <legend>Gender</legend>
+            <div class="choice-list">
+              <label><input type="radio" name="gender" value="woman"> Woman</label>
+              <label><input type="radio" name="gender" value="man"> Man</label>
+              <label><input type="radio" name="gender" value="nonbinary"> Non-binary</label>
+              <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+            </div>
+          </fieldset>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Contact Information</legend>
+        <div class="form-grid">
+          <label for="email">Email address
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </label>
+          <label for="phone">Phone number
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </label>
+          <label for="city">City
+            <input id="city" name="city" type="text" autocomplete="address-level2">
+          </label>
+          <label for="address">Address
+            <textarea id="address" name="address" rows="3" autocomplete="street-address"></textarea>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Professional / Academic Details</legend>
+        <div class="form-grid">
+          <label for="organization">Institution or organization
+            <input id="organization" name="organization" type="text" autocomplete="organization">
+          </label>
+          <label for="designation">Designation
+            <input id="designation" name="designation" type="text">
+          </label>
+          <label for="study-area">Area of study
+            <input id="study-area" name="studyArea" type="text">
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Interests and Skills</legend>
+        <fieldset class="choice-group">
+          <legend>Areas of interest</legend>
+          <div class="choice-list">
+            <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <label><input type="checkbox" name="interests" value="photography"> Photography</label>
+            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+          </div>
+        </fieldset>
+        <label for="skills">Skills
+          <textarea id="skills" name="skills" rows="3" placeholder="For example: HTML, writing, photography"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Purpose of Contact</legend>
+        <div class="choice-list">
+          <label><input type="radio" name="purpose" value="collaboration" required> Collaboration</label>
+          <label><input type="radio" name="purpose" value="project-discussion"> Project discussion</label>
+          <label><input type="radio" name="purpose" value="networking"> Networking</label>
+          <label><input type="radio" name="purpose" value="general-enquiry"> General enquiry</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Additional Information</legend>
+        <label for="message">Message or introduction
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a little more..."></textarea>
+        </label>
+      </fieldset>
+
+      <div class="form-actions">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Alex Morgan</p>
+    <a href="../lab02-popular/popular.html">Return to the semantic profile</a>
+  </footer>
 </body>
 </html>
